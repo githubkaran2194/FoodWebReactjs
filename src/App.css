@@ -91,7 +91,34 @@ color:red;
   }
 }
 
+/* about */
+.about{
+  margin-top: 20px;
+}
+.about h2{
+  font-size: 80px;
+  text-align: center;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 15px 15px 5px white;
+  text-transform: uppercase;
+}
 
+@media screen and (max-width:398px) {
+  .about h2{
+    font-size: 40px!important;
+  }
+}
+@media screen and (max-width:220px) {
+  .about h2{
+    font-size: 20px!important;
+  }
+}
+@media screen and (min-width:835px) { 
+  .about h2{
+    font-size: 70px!important;
+  }
+}
 /* social footer */
 
 .social a{

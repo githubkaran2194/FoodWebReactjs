@@ -8,6 +8,8 @@ import { CartProvider } from 'react-use-cart';
 import LoginForm from './Pages/Login';
 import SignIn from './Pages/SignIn';
 import Footer from './Component/Footer';
+import About from './Pages/About';
+import Contact from './Pages/Contact'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
 <NavbarNav/>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/about' element={<About/>} /> 
+      <Route path='/contact' element={<Contact/>} /> 
       <Route path='/cart' element={<Cart/>} />
       <Route path="/login" element={<LoginForm/>} />
       <Route path='/signIn' element={<SignIn/>} />
