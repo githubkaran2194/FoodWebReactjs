@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgba(248, 220, 96, 0.97);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+/* src/navbar.css */
+.home{
+  background-color: rgba(248, 220, 96, 0.97);
+  padding: 20px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home img{
+  height: 80vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.home .home-text {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  overflow: hidden;
+}
+.home .home-text h1{
+  font-style: oblique;
+  font-size: 70px;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* src/navbar.css */
+
+.link i:nth-child(1){
+  text-align: center;
+  margin-right: 1px;
+} 
+
+.link{
+  font-size: 15px;
+  color: black;
+  border-radius: 50%;
+  align-items: center;
+  margin-left: 0px;
+  text-decoration: none;
+}
+.link:hover{
+color:red;
+ 
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.nav-link {
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.Link{
+  color:#453f3f!important ;
+    text-decoration: none !important ;
+}
+.text{
+  color: rgb(34, 31, 31);
+}
+.text:hover{
+  color: rgb(83, 78, 78);
+}
+
+.navbar-nav {
+  flex-grow: 2;
+  justify-content: end;
+}
+
+/* Login */
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+  height: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+/* social footer */
+
+.social a{
+  margin-right: 20px;
+}
+.social a i{
+ font-size: large;
+ margin-bottom: 10px;
+ color: rgb(255, 243, 108);
+ transition: 0.3s;
+}
+.social a i:hover{
+ color: orange;
+ transform: scale(1.5);
 }
